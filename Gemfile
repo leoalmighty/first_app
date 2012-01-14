@@ -17,6 +17,14 @@ group :assets do
   gem 'uglifier'
 end
 
+group :development do
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'rspec'
+end
+
 gem 'jquery-rails'
 
 # Use unicorn as the web server
