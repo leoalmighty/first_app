@@ -26,6 +26,11 @@ group :test do
   gem 'rspec'
 end
 
+group :production do
+  # gems specifically for Heroku go here
+  gem "pg"
+end
+
 gem 'jquery-rails'
 
 # Use unicorn as the web server
