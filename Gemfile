@@ -8,6 +8,8 @@ gem 'rails', '3.1.0'
 # gem 'sqlite3'
 
 gem 'json'
+gem 'twitter'
+gem 'yajl-ruby'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -21,6 +23,7 @@ end
 group :development do
   gem 'rspec-rails'
   gem 'sqlite3'
+  gem 'annotate', '~> 2.4.1.beta'
 end
 
 group :test do
