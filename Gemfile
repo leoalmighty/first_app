@@ -18,6 +18,7 @@ group :assets do
   gem 'coffee-rails', "~> 3.1.0"
   gem 'uglifier'
   gem 'webrat'
+  gem 'gravatar_image_tag', '0.1.0'
 end
 
 group :development do
