@@ -2,9 +2,16 @@
   <div class="container">
     <%= link_to "Sample App", root_path, :class => 'brand' %>
     <ul class="nav">
-      <li><%= link_to "Home", '#' %></li>
-      <li><%= link_to "Help", '#' %></li>
-      <li><%= link_to "Sign in", '#' %></li>
+      <li><%= link_to "Home", root_path %></li>
+      <% if signed_in? %>
+        <li><%= link_to "Profile", current_user %></li>
+      <% end %>
+      <li><%= link_to "Help", help_path %></li>
+      <% if signed_in? %>
+        <li><%= link_to "Sign out", signout_path %></li>
+      <% else %>
+        <li><%= link_to "Sign in", signin_path %></li>
+      <% end %>
     <ul>
   </div>
 </div>

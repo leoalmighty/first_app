@@ -17,7 +17,7 @@
   <div class="container">
     <div class="content">
       <% flash.each do |k, v| %>
-        <div class="alert alert-success <%= k %>"><%= v %></div>
+        <div class="alert alert-<%= k %>"><%= v %></div>
       <% end %>
       <%= yield %>
     </div>
