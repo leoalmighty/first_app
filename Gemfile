@@ -11,6 +11,7 @@ gem 'json'
 gem 'twitter'
 gem 'yajl-ruby'
 gem 'gravatar_image_tag', '0.1.0'
+gem 'will_paginate', '3.0.pre'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -25,6 +26,7 @@ group :development do
   gem 'rspec-rails'
   gem 'sqlite3'
   gem 'annotate', '~> 2.4.1.beta'
+  gem 'faker', '0.3.1'
 end
 
 group :test do
